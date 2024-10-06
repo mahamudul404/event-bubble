@@ -1,4 +1,4 @@
-let timer = 60;
+let timer = 2;
 let score = 0;
 let hitrn = 0;
 
@@ -35,6 +35,11 @@ function runTimer() {
     } else {
       clearInterval(timerInterval);
       document.querySelector("#pbtm").innerHTML = `<h2>Game Over</h2>`;
+      document
+        .querySelector("#pbtm")
+        .addEventListener("click", function () {
+          location.reload();
+        });
     }
   }, 1000);
 }
