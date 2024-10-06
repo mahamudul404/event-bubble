@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 html,body{
@@ -19,8 +20,43 @@ html,body{
 }
 
 #panel{
+  overflow: hidden;
   width:80%;
   height: 80%;
   background-color: #fff;
   border-radius: 10px;
+}
+
+#ptop{
+  display: flex;
+  padding: 0px 30%;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(65, 102, 65);
+}
+
+.elem{
+ display: flex;
+ align-items: center;
+ gap: 20px;
+
+}
+
+.box{
+ padding: 10px 20px;
+ background-color: #ffffff;
+ color: rgb(26, 71, 49);
+ font-weight: 600;
+ font-size: 20px;
+ border-radius: 5px;
+}
+
+#pbtm{
+  width: 100%;
+  height: calc(100% - 100px);
+  background-color: black;
+ 
 }
